@@ -5,6 +5,6 @@ Rails.application.routes.draw do
    get '/create_link' => 'application#create'
    get '/link/:id/edit' => 'application#edit'
    get '/update_link/:id' => 'application#update'
-  
+  root :to => "application#index"
   
 end
